@@ -41,4 +41,3 @@ let pets = {
   'neptune' : 'fish',
   'darwin' : 'lizard'
 }
-
