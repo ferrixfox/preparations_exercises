@@ -5,5 +5,6 @@ function evenOrOdd (num){
 
 let rlSync = require('readline-sync');
 
-let num = rlSync.question('enter a number: ')
-evenOrOdd(num);
+let num = Number(rlSync.question('enter a number: '));
+if (isNaN(num)) console.log(`Error: ${num} is not a number`);
+else evenOrOdd(num);
