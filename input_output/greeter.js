@@ -6,5 +6,4 @@ function getName(userName){
 
 let firstName = getName('first');
 let lastName = getName('last');
-
 console.log(`Hello, ${firstName} ${lastName}!`);
