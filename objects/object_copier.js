@@ -1,6 +1,9 @@
-function objCopier(obj, copy){
+function objCopier(obj, keys = Object.keys(obj)){
+  let copy = {}
   for(let key in obj){
-    copy[key] = obj[key];
+    if(keys.includes(key)){
+      copy[key] = obj[key];
+    }
   }
   return copy;
 }
@@ -11,4 +14,5 @@ let obj = {
   favorite_food : 'Pizza',
 }
 
-console.log(objCopier(obj, {}));
+let copy = objCopier(obj)
+console.log(copy);
