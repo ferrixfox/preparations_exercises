@@ -4,6 +4,7 @@ let myProtoObj = {
 };
 
 let myObj = Object.create(myProtoObj);
+myObj.qux = 3;
 
 console.log(myObj.foo);
 console.log(myObj.bar);
