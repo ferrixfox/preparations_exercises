@@ -2,5 +2,7 @@ function foo(bar) {
   console.log(bar, bar, bar);
 }
 
+let bar = foo;
+
 foo("hello"); // should print "hello hello hello"
-foo("hi");    // should print "hi hi hi"
+bar("hi");    // should print "hi hi hi"
